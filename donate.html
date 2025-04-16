@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Section</title>
+ 
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/bootstrap.min.css"/>
+ <link rel="stylesheet" href="style.css"/>
+ <link rel="stylesheet" href="css/bootstrap.min.css"/>
+ <link rel="stylesheet" href="style.css"/>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+  
+</head>
+<style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #343a40;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+     
+      
+    }
+    
+
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .header .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .header .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+
+    
+    /* Main section styling to make space for fixed header */
+    .main {
+      padding: 80px 20px;
+      background-color: #f8f9fa;
+
+    }
+    .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            margin-top: 7%;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .donation-container {
+            max-width: 400px;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 8px;
+        }
+        .donation-container h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .donation-container p {
+            font-size: 14px;
+        }
+        .donate-button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .header1 {
+            background-color: #8ac5ff;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+        .email {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+    
+   
+
+
+</style>
+
+<body>
+    
+
+
+
+  <!-- <div class="container donate-section">
+    
+      Image Section -->
+      <!-- <div class="col-md-6 donate-image" ; style="margin-top: 5%;">
+        <img src="assets\img\home\donatioins.jpg" alt="Orphan Foundation">
+      </div>
+    
+      <div class="header1">Local Bank Accounts (Domestic)</div> -->
+      <div class="container">
+        <div class="image-container">
+            <img src="assets/img/home/donatioins.jpg" alt="Donation Image">
+        </div>
+        <div class="donation-container">
+            <h2>We couldn't do it without you!</h2>
+            <p>Every donation makes a difference and brings transformation to people in need.</p>
+            <p><strong>Click the button below to start transforming lives!</strong> (Only for Indian Donors)</p>
+            <a href="#" class="donate-button">DONATE NOW</a>
+        </div>
+    </div>
+    
+    <div class="header1">Local Bank Accounts (Domestic)</div>
+      <table>
+          <tr>
+              <th>Account Name</th>
+              <th>Account Number</th>
+              <th>IFSC Code</th>
+              <th>Bank Name & Branch</th>
+          </tr>
+          <tr>
+            <td>KINDLE RURAL WELFARE SOCIETY</td>
+            <td>40215431061</td>
+            <td>SBIN0000691</td>
+            
+            <td>State Bank of India, FCRA Cell, 4th Floor, New Delhi Main Branch, 11, Sansad Marg, New Delhi - 110001</td>
+        </tr>
+         
+         
+          
+      </table>
+      
+      <div class="header1">ONLY FOR FOREIGN DONORS - FCRA ACCOUNT (International)</div>
+      <table>
+          <tr>
+              <th>Account Name</th>
+              <th>Account Number</th>
+              <th>IFSC Code</th>
+              <th>SWIFT Code</th>
+              <th>Bank Name & Branch</th>
+          </tr>
+          <tr>
+              <td>KINDLE RURAL WELFARE SOCIETY</td>
+              <td>40215431061</td>
+              <td>SBIN0000691</td>
+              <td>SBININBB104</td>
+              <td>State Bank of India, FCRA Cell, 4th Floor, New Delhi Main Branch, 11, Sansad Marg, New Delhi - 110001</td>
+          </tr>
+      </table>
+      
+      <p class="email">Please inform us through email once you have made a remittance. <strong>Email:</strong> <a href="kindlengo2020@gmail.com">kindlengo2020@gmail.com</a></p>
+  
+
+
+      <div id="header-container"></div>
+
+      <script>
+        // Load the header from an external HTML file
+        document.addEventListener("DOMContentLoaded", function () {
+          fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById("header-container").innerHTML = data;
+              
+              // Add active class to the current page's link
+              let links = document.querySelectorAll(".nav-links a");
+              let currentURL = window.location.pathname.split("/").pop(); // Get current page file name
+      
+              links.forEach(link => {
+                if (link.getAttribute("href") === currentURL) {
+                  link.classList.add("active"); // Highlight active page
+                }
+              });
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+        });
+      </script>
+      
+
+
+
+
+  <!-- Bootstrap JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
