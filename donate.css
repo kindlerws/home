@@ -1,0 +1,74 @@
+
+
+    
+    /* Main section styling to make space for fixed header */
+    .main {
+        padding: 80px 20px;
+        background-color: #f8f9fa;
+  
+      }
+      .container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 20px;
+              margin-bottom: 20px;
+              margin-top: 7%;
+          }
+          .image-container img {
+              max-width: 100%;
+              height: auto;
+              border-radius: 8px;
+          }
+          .donation-container {
+              max-width: 400px;
+              padding: 20px;
+              background: #f8f8f8;
+              border-radius: 8px;
+          }
+          .donation-container h2 {
+              font-size: 18px;
+              font-weight: bold;
+          }
+          .donation-container p {
+              font-size: 14px;
+          }
+          .donate-button {
+              display: inline-block;
+              background-color: #4a90e2;
+              color: white;
+              padding: 10px 20px;
+              text-decoration: none;
+              font-weight: bold;
+              border-radius: 5px;
+              text-align: center;
+          }
+          table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-top: 20px;
+          }
+          th, td {
+              border: 1px solid #ddd;
+              padding: 8px;
+              text-align: left;
+          }
+          th {
+              background-color: #f2f2f2;
+          }
+          .header1 {
+              background-color: #8ac5ff;
+              font-weight: bold;
+              text-align: center;
+              padding: 10px;
+          }
+          .email {
+              margin-top: 10px;
+              font-weight: bold;
+          }
+  
+      
+     
+  
+  
+  

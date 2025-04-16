@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Grid</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  
+  
+  <style>
+    .image-grid img {
+      width: 100%; /* Make the image width fill the column */
+      height: 100%; /* Make the image height fill the column */
+      object-fit: cover; /* Crop the image to fit without distortion */
+      
+    }
+
+    .image-grid .grid-item {
+      aspect-ratio: 1 / 1; /* Maintain a 1:1 square aspect ratio */
+      overflow: hidden; /* Hide overflow if the image doesn't perfectly fit */
+      margin-top: 5%;
+    }
+    
+  </style>
+</head>
+<body>
+   <header class="header">
+      <div style="display: flex; align-items: center;">
+        <img src="assets/img/logo.png" alt="Company Logo">
+        <span>KINDLE RURAL WELFARE SOCIETY</span>
+      </div>
+  
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+  
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="about.html">ABOUT</a>
+        <a href="donate.html">DONATE</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+   
+
+
+     <div class="container mt-4">
+      <div class="row g-3 image-grid">
+        <!-- Grid Item 1 -->
+        <div class="col-6 col-md-4 grid-item">
+          <img src="assets\img\gallery\WhatsApp Image 2025-01-15 at 07.43.36 (6).jpeg" alt="Placeholder 1">
+        </div>
+        <!-- Grid Item 2 -->
+        <div class="col-6 col-md-4 grid-item">
+          <img src="assets\img\gallery\WhatsApp Image 2025-01-13 at 18.49.15 (1).jpeg" alt="Placeholder 2">
+        </div>
+        <!-- Grid Item 3 -->
+        <div class="col-6 col-md-4 grid-item">
+          <img src="assets\img\gallery\WhatsApp Image 2025-01-13 at 18.49.13.jpeg" alt="Placeholder 3">
+        </div>
+        <!-- Grid Item 4 -->
+        <div class="col-6 col-md-4 grid-item">
+          <img src="assets\img\gallery\IMG_20201222_120525.jpg" alt="Placeholder 4">
+        </div>
+        <!-- Grid Item 5 -->
+       <div class="col-6 col-md-4 grid-item">
+          <img src="assets\img\gallery\IMG_20210112_093208.jpg" alt="Placeholder 5">
+       </div>
+       <!-- Grid Item 6 -->
+       <div class="col-6 col-md-4 grid-item">
+          <img src="assets\img\gallery\WhatsApp Image 2021-05-27 at 09.01.25(1).jpeg" alt="Placeholder 6">
+       </div>
+
+        <!-- Grid Item 7 -->
+       <div class="col-6 col-md-4 grid-item">
+        <img src="assets\img\gallery\WhatsApp Image 2023-03-10 at 06.30.14(1).jpeg" alt="Placeholder 7">
+       </div>
+       <!-- Grid Item 8 -->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG_20210114_123025.jpg" alt="Placeholder 8">
+     </div>
+     <!-- Grid Item 9 -->
+     <div class="col-6 col-md-4 grid-item">
+    <img src="assets\img\gallery\IMG_20210114_122046.jpg" alt="Placeholder 9">
+     </div>
+     <!-- Grid Item 10-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\WhatsApp Image 2024-01-25 at 17.08.07.jpeg"alt="Placeholder 10">
+      </div>
+      <!-- Grid Item 11-->
+     <div class="col-6 col-md-4 grid-item">
+     <img src="assets\img\gallery\WhatsApp Image 2025-01-13 at 14.45.13 (1).jpeg" alt="Placeholder 11">
+     </div>
+    <!-- Grid Item 12 -->
+    <div class="col-6 col-md-4 grid-item">
+    <img src="assets\img\gallery\WhatsApp Image 2025-01-13 at 14.45.13.jpeg" alt="Placeholder 12">
+    </div>
+    <!-- Grid Item 13-->
+    <div class="col-6 col-md-4 grid-item">
+    <img src="assets\img\gallery\WhatsApp Image 2025-01-13 at 14.52.44.jpeg" alt="Placeholder 13">
+     </div>
+     <!-- Grid Item 14 -->
+     <div class="col-6 col-md-4 grid-item">
+     <img src="assets\img\gallery\IMG-20201222-WA0111.jpg" alt="Placeholder 14">
+     </div>
+     <!-- Grid Item 15 -->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20201222-WA0114.jpg" alt="Placeholder 15">
+      </div>
+      <!-- Grid Item 16 -->
+     <div class="col-6 col-md-4 grid-item">
+    <img src="assets\img\gallery\IMG-20210228-WA0136.jpg" alt="Placeholder 16">
+     </div>
+      <!-- Grid Item 17 -->
+     <div class="col-6 col-md-4 grid-item">
+     <img src="assets\img\gallery\IMG-20210710-WA0070.jpg" alt="Placeholder 17">
+      </div>
+      <!-- Grid Item 18 -->
+       <div class="col-6 col-md-4 grid-item">
+  <img src="assets\img\gallery\WhatsApp Image 2025-01-13 at 17.40.38.jpeg" alt="Placeholder 18">
+       </div>
+      <!-- Grid Item 19 -->
+    <div class="col-6 col-md-4 grid-item">
+  <img src="assets\img\gallery\WhatsApp Image 2025-01-13 at 18.48.47.jpeg" alt="Placeholder 19">
+     </div>
+     <!-- Grid Item 20 -->
+     <div class="col-6 col-md-4 grid-item">
+  <img src="assets\img\gallery\WhatsApp Image 2025-01-13 at 18.49.12.jpeg" alt="Placeholder 20">
+     </div>
+     <!-- Grid Item 21 -->
+     <div class="col-6 col-md-4 grid-item">
+  <img src="assets\img\gallery\IMG-20211004-WA0237.jpg" alt="Placeholder 21">
+       </div>
+      <!-- Grid Item 22-->
+     <div class="col-6 col-md-4 grid-item">
+  <img src="assets\img\gallery\WhatsApp Image 2023-01-25 at 17.48.35.jpeg" alt="Placeholder 22">
+     </div>
+
+      <!-- Grid Item 23-->
+      <div class="col-6 col-md-4 grid-item">
+        <img src="assets/img/gallery/18.docx'''.jpg" alt="Placeholder 23">
+           </div>
+            <!-- Grid Item 24-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\20180114_162807.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 25-->
+         <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\20180114_174552.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 26-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\abn.jpeg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 27-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\books dist1.jpeg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 28-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\books dist2.jpeg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 29-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG_20200114_170544.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 30-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG_20201123_110738.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 31-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG_20201222_120345.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 32-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG_20201222_120420.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 33-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG_20201222_120525.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 34-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG_20211201_115303.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 35-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG_20220114_112909.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 36-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20180430-WA0036.jpg" alt="Placeholder 22">
+         </div>
+
+           <!-- Grid Item 37-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20180728-WA0051.jpg" alt="Placeholder 22">
+         </div>
+
+           <!-- Grid Item 38-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20201123-WA0090.jpg" alt="Placeholder 22">
+         </div>
+
+           <!-- Grid Item 39-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20210114-WA0201.jpg" alt="Placeholder 22">
+         </div>
+
+           <!-- Grid Item 40-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20210228-WA0136.jpg" alt="Placeholder 22">
+         </div>
+
+           <!-- Grid Item 41-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20211002-WA0346.jpg" alt="Placeholder 22">
+         </div>
+
+ <!-- Grid Item 42-->
+ <div class="col-6 col-md-4 grid-item">
+  <img src="assets\img\gallery\IMG-20211004-WA0229.jpg" alt="Placeholder 22">
+     </div>
+      <!-- Grid Item 43-->
+      <div class="col-6 col-md-4 grid-item">
+        <img src="assets\img\gallery\IMG-20220125-WA0160.jpg" alt="Placeholder 22">
+           </div>
+            <!-- Grid Item 44-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20221115-WA0005.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 45-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20221121-WA0029.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 46-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20221121-WA0034.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 47-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\IMG-20221201-WA0021.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 48-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\WhatsApp Image 2020-11-23 at 11.24.53(1) - Copy.jpeg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 49-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\press.jpg" alt="Placeholder 22">
+         </div>
+          <!-- Grid Item 50-->
+     <div class="col-6 col-md-4 grid-item">
+      <img src="assets\img\gallery\WhatsApp Image 2021-02-28 at 15.10.58(1).jpeg" alt="Placeholder 22">
+         </div>
+
+      </div>
+      </div>
+      
+ </div>
+   
+
+
+
+
+
+
+ <footer id="footer" class="footer">
+   <div class="about">
+       <h2><img src="assets/img/logo.png" alt="footer logo" ></h2>
+       <p><strong> KINDLE RURAL WELFARE SOCIETY</strong></p>
+       <p>   Thank you for your interest and insights into our mission to transform the lives of children and their parents in rural and urban areas
+           through improved education, health, and community development..</p>
+       <div class="social-icons">
+           <a href="https://www.linkedin.com/company/ramdisk/"><img src="asset/img/Linkedin3.png" alt="LinkedIn">LinkedIn</a>
+           <a href="https://github.com/ramesh-m99"><img src="asset/img/Github1.png" alt="GitHub">GitHub</a>
+       </div>
+   </div>
+   <div class="company">
+       <h3 style="margin-top: 0%;">About Us</h3>
+       <p><a href="gallery.html">Womens Empowerment programe</a></p>
+       <p><a href="gallery.html">Legal Awareness Camp</a></p>
+       <p><a href="gallery.html">Services</a></p>
+   </div>
+   <div class="contact-info">
+       <h3>CONTACT US</h3>
+       
+      
+       <p>SUNDARAIAH NAGER,MADHIRA-507203 </p>
+       <p>  KHAMMAM,Telangana, India.</p>
+       <p><img src="assets\img\home\phone2.png" alt="Phone"> +91-9581223987</p>
+       <p><img src="assets\img\home\email.png" alt="Email"> kindlengo2020@gmail.com</p>
+   </div>
+   <!-- <div class="copyright" >
+       &copy; 2023 Copyright: Ramdisk Technologies
+   </div> -->
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+ <script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    if (navLinks) {
+      navLinks.classList.toggle("active");
+    }
+  }
+</script>
+  <!-- Bootstrap JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
+
+  

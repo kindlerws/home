@@ -1,82 +1,206 @@
-/* Basic Reset to avoid margin and padding issues */
+  /* Fixed header style */
+/* Reset styles */
 * {
-  margin: 5px;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Styling for the navbar */
-.nav {
-  background-color: #343a40; /* Dark background for the navbar */
-  position: fixed;
-  top: 55px;
-  left: 0;
-  width: 100%;
-  z-index: 1030; /* Ensure the navbar stays on top */
-  padding: 10px 20px;
+/* Ensure body has padding to prevent content from being hidden under navbar */
+body {
+    padding-top: 0px; /* Adjust to match navbar height */
+}
+
+/* Fixed Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust height */
+    background: linear-gradient(to right, #FFFFFF, #E3F2FD);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures navbar is always on top */
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/* Navigation Links (Desktop View) */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0070C8;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+
+    border-radius: 5px;
+    color: #E53935;
+}
+
+/* Mobile Menu Button */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon in mobile view */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+        gap: 10px;
+        display: none; /* Initially hidden */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+   
+
+  .footer { background:  linear-gradient(to right, #FFFFFF, #E3F2FD);
+    color: #0070C8;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    width: 100%; /* Ensure it fits the screen width */
+    box-sizing: border-box;
+    margin-top: 50px; /* Added gap between buttons and footer */
+}
+.footer div {
+    max-width: 300px;
+}
+.footer a {
+    
+    color: #0070C8;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.footer a:hover{
+    color: #E53935;
+}
+.footer .social-icons img {
+    width: 30px;
+    margin: 5px;
+}
+.footer .contact-info p {
+    margin: 5px 0;
+}
+.footer .contact-info img {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    
+}
+
+.header {
+  background: linear-gradient(to right, #FFFFFF, #E3F2FD);
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: fixed;
+  z-index: 10;
 }
 
-/* Navbar links and brand */
-.nav-brand {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #f8f9fa;
-  text-transform: uppercase;
-  margin-left: 20px;
+.header img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header span {
+  color: #0070C8;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .nav-links {
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
 
 .nav-links a {
-  color: #1b88f5;
-  font-size: 1.1rem;
-  padding: 10px 15px;
-  text-transform: uppercase;
   text-decoration: none;
-  transition: all 0.3s ease;
+  color: #0070C8;
+  font-weight: 600;
 }
 
-.nav-links a.active {
-  color: red;
-  font-weight: bold;
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #0070C8;
 }
 
-.nav-links a:hover {
-  color: #2cc149; /* Change color on hover */
-  background-color: #495057;
-  border-radius: 5px;
-}
-
-/* Add padding to the body or content to prevent overlap with fixed navbar */
-body {
-  padding-top: 70px; /* Adjust this value to the height of your navbar */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .nav-brand {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-
+@media screen and (max-width: 768px) {
   .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    background: #FFFFFF;
     flex-direction: column;
-    width: 100%;
+    padding: 15px 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
 
-  .nav-links a {
-    text-align: center
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
   }
 }

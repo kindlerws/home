@@ -3,259 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Section</Section></title>
+  <title>home Section</Section></title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-  <style>
-    /* Custom CSS for styling */
-   
-    /* Fixed header style */
- .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #343a40;
-      color: white;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-    }
-
-    .header .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .header .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-
-    .header .nav-links a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .header .nav-links a:hover {
-      text-decoration: underline;
-    }
-
-    /* Main section styling to make space for fixed header */
-    .main {
-      padding: 80px 20px;
-      background-color: #f8f9fa;
-    }
-         
-    
-.slide {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    white-space: nowrap;
-}
-
-.slide img {
-    width: 100%;
-    height:100%;
-    object-fit: cover;
-    display: none;
-    animation-play-state: running;
-}  */
-
-.slider-container {
-    flex: 1;
-    overflow: hidden; 
-    position: relative;
-}
-
-.slider {
-    display: flex;
-    width: 300%;
-    animation: slideAnimation 2s infinite ease-in-out ;
-   
-    
-}
-
-.slider img {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover;
-}
-    
-    
-
-.carousel-item img {
-    width: 100%;
-    height: 80vh;
-     object-fit: cover; 
-} 
-
-        .carousel-inner {
-            display: flex;
-            transition: transform 0.2s ease-in-out;
-            white-space: nowrap;
-        }
-        .carousel-item {
-            min-width: 100%;
-            overflow: hidden;
-        }
-        .carousel-item img {
-            width: 100%;
-            height: 70vh; 
-            object-fit: cover;
-        }  
-        
-        .container1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin: 20px;
-            border: 1px solid #8bc34a;
-        }
-        .box {
-            flex: 1;
-            padding: 20px;
-            border-right: 1px solid #8bc34a;
-        }
-        .box:last-child {
-            border-right: none;
-        }
-        .icon {
-            font-size: 30px;
-            color: #8bc34a;
-        }
-        .gray-bg {
-            background-color: #d3d3d3; /* Light gray */
-            color: white;
-        }
-        h2 {
-            font-size: 22px;
-            margin: 10px 0;
-        }
-        .container2 {
-            width: 80%;
-            margin: auto;
-            padding: 20px 0;
-        }
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            font-weight: bold;
-        }
-        h1 span {
-            color:black; /* Gray instead of green */
-        }
-        .story {
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #ddd;
-            padding: 20px 0;
-        }
-        .story img {
-            width: 300px;
-            height: auto;
-            border-radius: 5px;
-            margin-left: 20px;
-        }
-        .story-content {
-            flex: 1;
-        }
-        .story-title {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .story-text {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .Container {
-  display: flex;
-  align-items: center; /* Align content vertically */
-  justify-content: center; /* Center content */
-  background-color: #f8f9fa; /* Light background */
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 95vw;
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="stylesheet" href="assets/index.css"/>
   
-  margin: 0 auto;
-  gap: 30px; /* Space between image and text */
-}
-
-.Container img {
-  width: 50%; /* Half the container width */
-  max-width: 500px;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: rounded corners */
-}
-
-.Container p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
-  max-width: 50%; /* Text takes half of the container */
-  text-align: justify;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .Container {
-    flex-direction: column; /* Stack image and text in small screens */
-    text-align: center;
-  }
-
-  .Container img, .Container p {
-    max-width: 100%; /* Full width on mobile */
-  }
-}
-
-.contact-container {
-            max-width: 80%;
-            margin: auto;
-            margin-top: 6%;
-        }
-        h2 {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .contact-content {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #333;
-        }
-        .contact-info {
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        .email a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .email a:hover {
-            text-decoration: underline;
-        }
-        .print-icon {
-            float: right;
-            font-size: 14px;
-            color: #777;
-            cursor: pointer;
-        }
-
-
-   
-  </style>
 </head>
-<body>
 
+<body>
+    <header class="header">
+        <div style="display: flex; align-items: center;">
+          <img src="assets/img/logo.png" alt="Company Logo">
+          <span>KINDLE RURAL WELFARE SOCIETY</span>
+        </div>
+    
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    
+        <nav class="nav-links" id="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="about.html">ABOUT</a>
+          <a href="donate.html">DONATE</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </header>
+    
+    
   
 
 
@@ -287,7 +62,11 @@
               </button>
           </div>
       </div>
-  
+
+
+
+
+   <!-- Containers Section -->
       <div class="container1">
         <div class="box">
             <div class="icon">👥</div>
@@ -306,72 +85,84 @@
         </div>
     </div>
 
+
+     <!-- donation Section -->
+
 <div class="Container">
    
         <img src="assets\img\home\photo-1623399785391-6970a4e8d261.avif" alt="img.1">
         <p>Donating to charity is a major mood-booster. The knowledge that you’re helping others is hugely empowering and, in turn, can make you feel happier and more fulfilled. Research has identified a link between making a donation to charity and increased activity in the area of the brain that registers pleasure – proving that as the old adage goes, it really is far better to give than to receive.</p>
-
     
 </div>
 
 
 
+ <!-- scrolling  Section -->
 
-
-
-<div class="contact-container">
-    <h2>Contact Us </h2>
-    <p class="contact-content">
-        Thank you for your interest and insights into our mission to transform the lives of children and their parents in rural and urban areas
-        through improved education, health, and community development.
-    </p>
-    <p class="contact-content">
-      If you would like more information about KINDLE RURAL WELFARE SOCIETY’s activities or wish to speak with one of our knowledgeable staff members, please contact us at +91-9581223987. We look forward to connecting with you.
-
-    </p>
-    <p class="contact-info">
-        <strong>KINDLE RURAL WELFARE SOCIETY, </strong>
-        <br>
-        SUNDARAIAH NAGER,MADHIRA-507203<br>
-        KHAMMAM,Telangana, India.
-    </p>
-    <p class="email">Your opinion matters to us! Please share your feedback by emailing <a href="kindlengo2020@gmail.com">kindlengo2020@gmail.com</a>.</p>
-</div>
-
-
-
-
-
-
-
-
-   
+<section style="background-color: #f4f4f4; padding: 40px 0;">
+    <h2 class="text-center mb-4">Glimpse of Our Activities</h2>
   
-<div id="header-container"></div>
+    <div class="scrolling-gallery">
+      <div class="gallery-track">
+        <!-- Repeat your image blocks -->
+        <img src="assets\img\gallery\20180114_174552.jpg" alt="Activity 1" />
+        <img src="assets\img\gallery\WhatsApp Image 2025-01-13 at 14.45.14.jpeg" alt="Activity 2" />
+        <img src="assets\img\gallery\WhatsApp Image 2023-03-10 at 06.30.13.jpeg" alt="Activity 3" />
+        <img src="assets\img\gallery\IMG-20221121-WA0029.jpg" alt="Activity 4" />
+        <img src="assets\img\gallery\IMG-20201222-WA0111.jpg" alt="Activity 5" />
+        <!-- Duplicate for seamless looping -->
+        <img src="assets\img\gallery\IMG_20201123_110738.jpg" alt="Activity 1" />
+        <img src="assets\img\gallery\IMG-20201222-WA0108.jpg" alt="Activity 2" />
+        <img src="assets\img\gallery\books dist2.jpeg" alt="Activity 3" />
+      </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="gallery.html" class="btn btn-primary btn-lg" style="background-color: #0070C8; border: none; padding: 10px 30px; border-radius: 30px; font-weight: bold;">
+          View Gallery
+        </a>
+  </section>
+  
+
+
+
+
+ <!-- footer Section -->
+<footer id="footer" class="footer">
+    <div class="about">
+        <h2><img src="assets/img/logo.png" alt="footer logo" ></h2>
+        <p><strong> KINDLE RURAL WELFARE SOCIETY</strong></p>
+        <p>   Thank you for your interest and insights into our mission to transform the lives of children and their parents in rural and urban areas
+            through improved education, health, and community development..</p>
+       
+    </div>
+    <div class="company">
+        <h3 style="margin-top: 0%;">About Us</h3>
+        <p><a href="gallery.html">Womens Empowerment programe</a></p>
+        <p><a href="gallery.html">Legal Awareness Camp</a></p>
+        <p><a href="gallery.html">Services</a></p>
+    </div>
+    <div class="contact-info">
+        <h3>CONTACT US</h3>
+        
+        
+        <p>SUNDARAIAH NAGER,MADHIRA-507203 </p>
+        <p>  KHAMMAM,Telangana, India.</p>
+        <p><img src="assets\img\home\phone2.png" alt="Phone"> +91-9581223987</p>
+        <p><img src="assets\img\home\email.png" alt="Email"> kindlengo2020@gmail.com</p>
+    </div>
+    
+</footer>
+
+
 
 <script>
-  // Load the header from an external HTML file
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("header.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("header-container").innerHTML = data;
-        
-        // Add active class to the current page's link
-        let links = document.querySelectorAll(".nav-links a");
-        let currentURL = window.location.pathname.split("/").pop(); // Get current page file name
-
-        links.forEach(link => {
-          if (link.getAttribute("href") === currentURL) {
-            link.classList.add("active"); // Highlight active page
-          }
-        });
-      })
-      .catch(error => console.error("Error loading navbar:", error));
-  });
-</script>
-
-
+    function toggleMenu() {
+      const navLinks = document.getElementById("nav-links");
+      if (navLinks) {
+        navLinks.classList.toggle("active");
+      }
+    }
+  </script>
   <!-- Bootstrap JavaScript Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
